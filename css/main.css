@@ -1,7 +1,12 @@
 .container {
-    max-width: 1200px;
+    max-width: 640px;
     margin: 0 auto;
     padding: 1em;
+}
+
+header{
+    max-width: 640px;
+    margin: 0 auto;
 }
 
 a {
@@ -17,6 +22,7 @@ body {
     font-family: "Poppins", sans-serif;
     --color1: #fff;
     --color2: #181818;
+    max-width: 640;
 }
 .nav-bar {
     width: 100%;
@@ -101,38 +107,60 @@ header {
     padding: 15%;
 }
 
-.playstore-button {
-    background-color: rgb(24, 24, 22);
+.playstore-button, .app-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.playstore-button a{
+    background-color: orangered;
     color: inherit;
     display: block;
+    border-radius: 30px;
     color: white;
     text-decoration: none;
-    padding: 1.5em 0;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
+ 
+}
+
+.app-button a{
+    background-color: transparent;
+    color: inherit;
+    display: block;
+    border:1px solid orangered ;
+    border-radius: 30px;
+    color: orangered;
+    text-decoration: none;
+    padding: 1em 0;
     text-align: center;
     font-size: 20px;
     margin: 2%;
-    margin-right: 65%;
+    padding-left: 50px;
+    padding-right: 50px;
+    
 }
 
-.app-button {
-    background-color: rgb(24, 24, 22);
-    color: inherit;
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 1.5em 0;
-    text-align: center;
-    font-size: 20px;
-    margin: 2%;
-    margin-right: 65%;
+.phones img{
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: -35%;
 }
 
-.phones img {
-    max-width: 1200px;
+
+.app {
+    max-width: 640px;
     margin: 0 auto;
 }
-
-
+h3 {
+    font-size: 50px;
+}
 
 
 /* @media(max-width:610px){ ******************************/
