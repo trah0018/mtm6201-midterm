@@ -107,6 +107,7 @@ header {
     padding: 15%;
 }
 
+/* making the buttons look nice */
 .playstore-button, .app-button {
   display: flex;
   align-items: center;
@@ -147,19 +148,234 @@ header {
     
 }
 
+/* making the images a propper size */
 .phones img{
     max-width: 640px;
     margin: 0 auto;
     margin-top: -35%;
 }
 
-
+/* adding the app section for mobile */
 .app {
     max-width: 640px;
     margin: 0 auto;
 }
+
+/* design all h4 in app section */
+.app h4 {
+        order: 1;
+        color: orangered;
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+}
+
 h3 {
-    font-size: 50px;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* adding the create account section for mobile */
+
+/* NOTE TO SELF**** USE THIS METHODE FOR DESKTOP ONLY IF POSSIBLE */
+.create-account {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20%;
+}
+
+.create-account img {
+    width: 100%;
+    order: 4;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.create-account h4 {
+   order: 1;
+   color: orangered;
+   flex-basis: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.create-account h3{
+order: 2;
+flex-basis: 100%;
+margin: 5%;
+}
+
+.create-account p {
+    order: 3;
+    flex-basis: 100%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 5%;
+}
+
+.explore {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20%;
+}
+
+.explore h4 {
+    order: 1;
+    color: orangered;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore h3 {
+    order: 2;
+flex-basis: 100%;
+margin: 5%;
+}
+
+.explore p {
+    order: 3;
+    flex-basis: 100%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 5%;
+}
+
+.explore img {
+    width: 100%;
+    order: 4;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center
+}
+
+.checkout {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20%;
+}
+
+.checkout h4 {
+    order: 1;
+    color: orangered;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout h3 {
+    order: 2;
+    flex-basis: 100%;
+    margin: 5%;
+}
+
+.checkout p {
+    order: 3;
+    flex-basis: 100%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 5%;
+}
+
+.checkout img{
+    width: 100%;
+    order: 4;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center
+}
+
+/* Adding the download app section for mobile */
+
+.download{
+    background-color:rgb(33, 35, 78);
+    margin-top: 20%;
+    padding: 1em;
+    
+
+}
+
+.download-info {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 3em;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "paragraph paragraph paragraph"
+    "buy-button try-button try-button";
+    
+}
+
+.download h5 {
+    grid-area: header ;
+    color: var(--color1);
+    font-size: 40px;
+    
+}
+
+.download p {
+
+    color: var(--color1);
+    grid-area: paragraph;
+   font-size: 20px;
+}
+
+.buy-button{ 
+    grid-area: buy-button;
+}
+
+.buy-button a {
+    order: 3;
+    background-color: orangered;
+    color: inherit;
+    display: block;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.try-button {
+    grid-area: try-button;
+}
+
+.try-button a{
+    background-color: transparent;
+    color: inherit;
+    display: block;
+    border:1px solid var(--color1) ;
+    border-radius: 20px;
+    color: var(--color1);
+    text-decoration: none;
+    padding: .9em 0;
+    text-align: center;
+    font-size: 20px;
+
+    
 }
 
 
