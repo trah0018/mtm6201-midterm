@@ -4,13 +4,26 @@
     padding: 1em;
 }
 
-header{
+header {
     max-width: 640px;
     margin: 0 auto;
 }
 
 a {
     text-decoration: none;
+    font-family: Montserrat;
+    padding: 20px;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserrat;
 }
 
 * {
@@ -18,12 +31,16 @@ a {
     margin: 0;
     padding: 0;
 }
+
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Montserrat;
     --color1: #fff;
-    --color2: #181818;
+    --color2: #252b42;
+    --color3: #fa4a0c;
+    --color4: #737373;
     max-width: 640;
 }
+
 .nav-bar {
     width: 100%;
     display: flex;
@@ -34,25 +51,32 @@ body {
     background-color: var(--color1);
     padding: 12px 20px;
 }
+
+.nav-bar a:hover {
+    color: #fa4a0c;
+}
+
 .logo img {
     width: 250px;
 }
 
 .menu {
-    display:flex ;
+    display: flex;
 }
+
 .menu li {
-    padding-left:30px;
+    padding-left: 30px;
 }
-.menu li a{
+
+.menu li a {
     display: inline-block;
-    text-decoration:none;
+    text-decoration: none;
     color: var(--color2);
     text-align: center;
     transition: 0.15s ease-in-out;
-    position:relative;
-    text-transform: uppercase;
+    position: relative;
 }
+
 .menu li a::after {
     content: "";
     position: absolute;
@@ -63,60 +87,74 @@ body {
     background: var(--color1);
     transition: 0.15s ease-in-out;
 }
+
 .menu li a:hover:after {
     width: 100%;
 }
-.open-menu , .close-menu{
+
+.open-menu,
+.close-menu {
     position: absolute;
     color: var(--color2);
     cursor: pointer;
     font-size: 1.5rem;
     display: none;
 }
+
 .open-menu {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
 }
-.close-menu{
+
+.close-menu {
     top: 20px;
     right: 20px;
 }
+
 #check {
     display: none;
 }
 
 h1 {
-    font-size:15px ;
-    
-}
-h2 {
-    font-size:50px ;
-    
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color4);
 }
 
-/* FOR DESKTOP 
-header {
-    background-image: url(../images/banner-image.jpg);
-    background-position: center;
-    background-size: 100%;
-} 
-  */
+h2 {
+    font-size: 35px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    color: var(--color2);
+}
+
+.banner p {
+    font-size: 25px;
+    text-align: center;
+    color: var(--color4);
+}
+
 
 .banner {
     padding: 15%;
 }
 
 /* making the buttons look nice */
-.playstore-button, .app-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.playstore-button,
+.app-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: montserrat;
 
 }
 
-.playstore-button a{
-    background-color: orangered;
+.playstore-button a {
+    background-color: var(--color3);
     color: inherit;
     display: block;
     border-radius: 30px;
@@ -126,30 +164,35 @@ header {
     text-align: center;
     font-size: 20px;
     margin-top: 5%;
-    padding-left: 50px;
-    padding-right: 50px;
- 
+    padding-left: 60px;
+    padding-right: 60px;
+
 }
 
-.app-button a{
+.app-button a {
     background-color: transparent;
     color: inherit;
     display: block;
-    border:1px solid orangered ;
+    border: 1px solid var(--color3);
     border-radius: 30px;
-    color: orangered;
+    color: var(--color3);
     text-decoration: none;
     padding: 1em 0;
     text-align: center;
     font-size: 20px;
     margin: 2%;
-    padding-left: 50px;
-    padding-right: 50px;
-    
+    padding-left: 60px;
+    padding-right: 60px;
+
 }
 
 /* making the images a propper size */
-.phones img{
+.phones {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.phones img {
     max-width: 640px;
     margin: 0 auto;
     margin-top: -35%;
@@ -161,27 +204,289 @@ header {
     margin: 0 auto;
 }
 
-/* design all h4 in app section */
-.app h4 {
-        order: 1;
-        color: orangered;
-        flex-basis: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 30px;
+h6 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+
 }
 
-h3 {
-    font-size: 60px;
-    display: flex;
+
+/* design all h4 in app section */
+.app h4 {
+    order: 1;
+    color: var(--color3);
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.app h3 {
+    order: 2;
+    flex-basis: 100%;
+    margin: 5%;
+    text-align: center;
+    font-size: 40px;
+    color: var(--color2);
+}
+
+.app p {
+    order: 3;
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: var(--color4);
+}
+
+.app img {
+    width: 100%;
+    order: 4;
+    flex-basis: 100%;
     align-items: center;
     justify-content: center;
+
 }
+
 
 /* adding the create account section for mobile */
 
 /* NOTE TO SELF**** USE THIS METHODE FOR DESKTOP ONLY IF POSSIBLE */
+.create-account {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    gap: 20px;
+}
+
+
+.explore {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    gap: 20px;
+}
+
+
+.checkout {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    gap: 20px;
+}
+
+
+
+
+
+/* Adding the download app section for mobile */
+
+.download {
+    background-color: #252B42;
+    margin-top: 20%;
+    padding: 1em;
+}
+
+.download-info {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 3em;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "paragraph paragraph paragraph"
+        "buy-button try-button try-button";
+
+}
+
+.download h5 {
+    grid-area: header;
+    color: var(--color1);
+    font-size: 40px;
+
+}
+
+.download p {
+
+    color: var(--color1);
+    grid-area: paragraph;
+    font-size: 20px;
+}
+
+.buy-button {
+    grid-area: buy-button;
+}
+
+.buy-button a {
+    order: 3;
+    background-color: var(--color3);
+    color: inherit;
+    display: block;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.try-button {
+    grid-area: try-button;
+}
+
+.try-button a {
+    background-color: transparent;
+    color: inherit;
+    display: block;
+    border: 1px solid var(--color1);
+    border-radius: 20px;
+    color: var(--color1);
+    text-decoration: none;
+    padding: .9em 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    padding: 5em;
+}
+
+
+@media(max-width:610px) {
+
+
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color1);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
+}
+
+@media(min-width:610px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-image: url(../images/banner-image.jpg);
+        background-position: center;
+        background-size: 100%;
+    }
+
+
+    h2 {
+        color: var(--color1);
+    }
+
+    .banner p {
+        color: var(--color1);
+    }
+
+    .banner-buttons {
+        display: flex;
+    }
+
+    .banner {
+
+        background-color: hsla(24, 24%, 10%, .6);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "header1 header1 header1 header1"
+            "header2 header2 header2 header2"
+            "paragraph paragraph paragraph paragraph"
+            "playstore-button playstore-button app-button app-button";
+    }
+
+    .banner h1 {
+        grid-area: header1;
+        text-align: center;
+        color: var(--color1);
+    }
+
+    .banner h2 {
+        grid-area: header2;
+        text-align: center;
+    }
+
+    .banner p {
+        grid-area: paragraph;
+    }
+
+    .playstore-button {
+        grid-area: playstore-button;
+        margin-left: 20%;
+    }
+
+    .app-button {
+        grid-area: app-button;
+        margin-right: 20%;
+    }
+
+    .app-button a {
+        background-color: transparent;
+        color: inherit;
+        display: block;
+        border: 1px solid var(--color1);
+        border-radius: 30px;
+        color: var(--color1);
+        text-decoration: none;
+        padding: 1em 0;
+        text-align: center;
+        font-size: 20px;
+        margin: 2%;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    h6 {
+        margin-bottom: -100px;
+        font-size: 40px;
+
+
+    }
+
+
+    /* NOTE TO SELF**** USE THIS METHODE FOR DESKTOP ONLY IF POSSIBLE 
+    ( going to need a create info div for header and parragraph to manipulate it with flex so it takes 50%)
 .create-account {
     max-width: 640px;
     margin: 0 auto;
@@ -201,7 +506,7 @@ h3 {
 
 .create-account h4 {
    order: 1;
-   color: orangered;
+   color: var(--color3);
    flex-basis: 100%;
    display: flex;
    align-items: center;
@@ -233,7 +538,7 @@ margin: 5%;
 
 .explore h4 {
     order: 1;
-    color: orangered;
+    color: var(--color3);
     flex-basis: 100%;
     display: flex;
     align-items: center;
@@ -273,7 +578,7 @@ margin: 5%;
 
 .checkout h4 {
     order: 1;
-    color: orangered;
+    color: var(--color3);
     flex-basis: 100%;
     display: flex;
     align-items: center;
@@ -302,112 +607,6 @@ margin: 5%;
     align-items: center;
     justify-content: center
 }
-
-/* Adding the download app section for mobile */
-
-.download{
-    background-color:rgb(33, 35, 78);
-    margin-top: 20%;
-    padding: 1em;
-    
+ */
 
 }
-
-.download-info {
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 3em;
-    gap: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "header header header"
-    "paragraph paragraph paragraph"
-    "buy-button try-button try-button";
-    
-}
-
-.download h5 {
-    grid-area: header ;
-    color: var(--color1);
-    font-size: 40px;
-    
-}
-
-.download p {
-
-    color: var(--color1);
-    grid-area: paragraph;
-   font-size: 20px;
-}
-
-.buy-button{ 
-    grid-area: buy-button;
-}
-
-.buy-button a {
-    order: 3;
-    background-color: orangered;
-    color: inherit;
-    display: block;
-    border-radius: 20px;
-    color: white;
-    text-decoration: none;
-    padding: 1em 0;
-    text-align: center;
-    font-size: 20px;
-
-}
-
-.try-button {
-    grid-area: try-button;
-}
-
-.try-button a{
-    background-color: transparent;
-    color: inherit;
-    display: block;
-    border:1px solid var(--color1) ;
-    border-radius: 20px;
-    color: var(--color1);
-    text-decoration: none;
-    padding: .9em 0;
-    text-align: center;
-    font-size: 20px;
-
-    
-}
-
-
-/* @media(max-width:610px){ ******************************/
-
-    
-
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        background-color: var(--color1);
-        transition: all 0.2s ease-in-out;
-    }
-    .menu li {
-        margin-top: 40px;
-    }
-    .menu li a{
-        padding: 10px;
-    }
-    .open-menu , .close-menu {
-        display: block;
-    }
-    #check:checked ~ .menu {
-        right: 0;
-    }
-
-
-
