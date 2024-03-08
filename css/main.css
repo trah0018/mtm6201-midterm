@@ -420,10 +420,7 @@ footer {
         color: var(--color1);
     }
 
-    .banner-buttons {
-        display: flex;
-    }
-
+   
     .banner {
 
         background-color: hsla(24, 24%, 10%, .6);
@@ -451,14 +448,15 @@ footer {
         grid-area: paragraph;
     }
 
+
     .playstore-button {
         grid-area: playstore-button;
-        margin-left: 20%;
+        margin-left: 30%;
     }
 
     .app-button {
         grid-area: app-button;
-        margin-right: 20%;
+        margin-right: 30%;
     }
 
     .app-button a {
@@ -478,11 +476,92 @@ footer {
     }
 
     h6 {
-        margin-bottom: -100px;
+      
         font-size: 40px;
-
-
     }
+
+    .app {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .app h3 {
+        font-size: 35px;
+        text-align: start;
+    }
+
+    .app h4 {
+        font-size: 25px;
+        text-align: start;
+        margin: 5%;
+    }
+    .app p{
+        font-size: 25px;
+        text-align: start;
+        margin: 5%;
+    }
+
+    .create-account {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 15%;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-areas:
+       "img info";
+       
+    }
+    .create-img {
+        grid-area: img;
+      
+    }
+
+    .create-info {
+        grid-area: info;
+        margin-top: 25%;
+    }
+
+    /* adding the explore layout */
+    .explore {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 15%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "info img";}
+
+        .explore-info {
+            grid-area: info;
+            margin-top: 30%;
+        }
+
+        .explore-img {
+            grid-area: img;
+        }
+
+        /* adding the checkout layout for desktop */
+
+        .checkout {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 15%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "img info";}
+
+            .checkout-info {
+                grid-area: info;
+                margin-top: 20%;
+            }
+
+            .checkout-img {
+                grid-area: img;
+            }
+        }
+
+
+
 
 
     /* NOTE TO SELF**** USE THIS METHODE FOR DESKTOP ONLY IF POSSIBLE 
@@ -608,5 +687,3 @@ margin: 5%;
     justify-content: center
 }
  */
-
-}
