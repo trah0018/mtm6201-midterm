@@ -4,6 +4,8 @@
     padding: 1em;
 }
 
+
+/* adding styiling for header mobile */
 header {
     max-width: 640px;
     margin: 0 auto;
@@ -151,8 +153,7 @@ h2 {
 }
 
 .phones img {
-    max-width: 640px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 /* adding the app section for mobile */
