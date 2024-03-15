@@ -11,28 +11,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
     <div class="container">
-
+        <!-- adding a skip link -->
+        <div class="skip-link">
+            <a href="#skip-link" class="skip-link">Skip to main content</a>
+        </div>
         <header>
             <nav>
                 <ul class="nav-bar">
-                    <li class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></li>
-                    <input type="checkbox" id="check" />
-                    <span class="menu">
+                    <li class="logo"><a href="#">
+                            <picture>
+                                <source srcset="images/logo-492_x_204.png" media="(min-width:610px)">
+                                <source srcset="images/logo.png" media="(min-width:320px)" />
+                                <img src="images/logo-492_x_204.png" alt="logo">
+                            </picture>
+                        </a></li>
+                    <div class="menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="product.html">Product</a></li>
                         <li><a href="#">Faq</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                    </span>
-                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -40,12 +42,14 @@
         <div class="container">
             <h6> Order now from Bella Onoji</h6>
 
-
+            <section id="skip-link"></section>
             <div class="products">
+                
                 <div class="fried-chicken">
-                    <source srcset="images/images/fried-chicken.png" media="(min-width:610px)">
-                    <source srcset="images/fried-chicken-512_x_512.png" media="(min-width:320px)" />
-                    <img src="images/fried-chicken.png" alt="fried-chicken plate image">
+                    <picture>
+                        <source srcset="images/fried-chicken-512_x_512.png" media="(min-width:320px)" />
+                        <img src="images/fried-chicken.png" alt="fried-chicken plate image">
+                    </picture>
                     <h5>Fried chicken m.</h5>
                     <h4>N1,900</h4>
                     <a href="#">Order Now</a>
@@ -53,20 +57,22 @@
 
 
                 <div class="veggie">
-                    <source srcset="images/veggie-tomato-1024_x_1024.png" media="(min-width:610px)">
-                    <source srcset="images/veggie-tomato-512_x_512.png" media="(min-width:320px)" />
-
-                    <img src="images/veggie-tomato-1024_x_1024.png" alt="veggie tomato mix plate image">
+                    <picture>
+                        <source srcset="images/veggie-tomato-1024_x_1024.png" media="(min-width:610px)">
+                        <source srcset="images/veggie-tomato-512_x_512.png" media="(min-width:320px)" />
+                        <img src="images/veggie-tomato-1024_x_1024.png" alt="veggie tomato mix plate image">
+                    </picture>
                     <h5>Veggie tomato mix</h5>
                     <h4>N1,900</h4>
                     <a href="#">Order Now</a>
                 </div>
 
                 <div class="ekpa">
-                    <source srcset="images/ekpa-food-1024_x_1024.png" media="(min-width:610px)">
-                    <source srcset="images/ekpa-food-512_x_512.png" media="(min-width:320px)" />
-
-                    <img src="images/ekpa-food-1024_x_1024.png" alt="moi-moi and ekpa plate image">
+                    <picture>
+                        <source srcset="images/ekpa-food-1024_x_1024.png" media="(min-width:610px)">
+                        <source srcset="images/ekpa-food-512_x_512.png" media="(min-width:320px)" />
+                        <img src="images/ekpa-food-1024_x_1024.png" alt="moi-moi and ekpa plate image">
+                    </picture>
                     <h5>ekpa plate</h5>
                     <h4>N!,900</h4>
                     <a href="#">Order Now</a>
