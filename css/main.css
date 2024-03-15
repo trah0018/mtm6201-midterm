@@ -170,7 +170,7 @@ h6 {
 }
 
 
-/* design all h4 in app section */
+/* design all h4 h3 p img in app section */
 .app h4 {
     order: 1;
     color: var(--color3);
@@ -314,7 +314,7 @@ h6 {
     font-weight: bold;
 }
 
-/* product page */
+/* adding product page for mobile */
 
 .products {
     max-width: 640px;
@@ -389,7 +389,7 @@ h6 {
 
 
 
-/* contact page  */
+/* adding contact page  */
 .contact {
     max-width: 640px;
     margin: 0 auto;
@@ -452,9 +452,7 @@ h6 {
     padding-right: 60px;
 }
 
-/* adds product page */
-
-
+/* adding footer */
 
 footer {
     padding: 5em;
@@ -553,7 +551,7 @@ h2 {
     width: 100%;
 }
 
-/* makes the product card transition down while hovering over them */
+/* makes the product card transition down while entering the product page */
 
 @keyframes goDown {
     0% {
@@ -583,14 +581,17 @@ h2 {
 }
 
 
-
+/* adding desktop styling */
 @media(min-width:610px) {
+
+
 
     .container {
         max-width: 1200px;
         margin: 0 auto;
     }
 
+    /* adding styling for nav and header */
     .menu {
         display: flex;
     }
@@ -622,6 +623,7 @@ h2 {
     }
 
 
+    /* adding desktop styling for banner */
     h2 {
         color: var(--color1);
     }
@@ -702,6 +704,7 @@ h2 {
         margin-top: 15%;
     }
 
+    /* adding propper styling for app section in desktop */
     .app {
         max-width: 1200px;
         margin: 0 auto;
