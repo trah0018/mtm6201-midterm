@@ -23,7 +23,10 @@
         <header>
             <nav>
                 <ul class="nav-bar">
-                    <li class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></li>
+                    <li class="logo"><a href="#">
+                        <source srcset="images/logo-492_x_204.png" media="(min-width:610px)">
+                        <source srcset="images/logo.png" media="(min-width:320px)"/>
+                        <img src="images/logo-492_x_204.png" alt="logo"></a></li>
                     <input type="checkbox" id="check" />
                     <span class="menu">
                         <li><a href="index.html">Home</a></li>
@@ -54,7 +57,9 @@
 
         <!-- Phone images section -->
         <div class="phones">
-            <img src="images/two-phones.png" alt="phone image" width="100%">
+            <source srcset="images/two-phones-2240_x_2000.png" media="(min-width:610px)">
+            <source srcset="images/two-phones-1120_x_1000.png" media="(min-width:320px)" />
+            <img src="images/two-phones-2240_x_2000.png" alt="phone image" width="100%">
         </div>
 
         <!-- how the app works section -->
@@ -65,7 +70,10 @@
             <hr />
             <div class="create-account">
                 <div class="create-img">
-                    <img src="images/login-img.png" alt="image of login in">
+                    <source srcset="images/orig-login-img.png" media="(min-width:610px)">
+                    <source srcset="images/login-img-1120_x_1000.png" media="(min-width:320px)" />
+                    <img src="images/orig-login-img.png" alt="login phne image">
+
                 </div>
                 <div class="create-info">
                     <h4>Create an account</h4>
@@ -76,6 +84,9 @@
 
             <div class="explore">
                 <div class="explore-img">
+                    <source srcset="images/food-img.png" media="(min-width:610px)">
+                    <source srcset="images/food-img-1120_x_1000.png" media="(min-width:320px)" />
+
                     <img src="images/food-img.png" alt="image exploring varieties of food">
                 </div>
                 <div class="explore-info">
@@ -86,6 +97,9 @@
             </div>
             <div class="checkout">
                 <div class="checkout-img">
+                    <source srcset="images/payment-img.png" media="(min-width:610px)">
+                    <source srcset="images/payment-img-1120_x_1000.png" media="(min-width:320px)" />
+
                     <img src="images/payment-img.png" alt="checkout image">
                 </div>
                 <div class="checkout-info">

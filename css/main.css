@@ -26,6 +26,8 @@ h6 {
     font-family: Montserrat;
 }
 
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -207,7 +209,7 @@ h6 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 40px;
-
+    margin-top:15% ;
 }
 
 
@@ -531,6 +533,95 @@ footer {
     justify-content: center;
 }
 
+/* adding animations */
+
+/* makes the h2 pop out while entering the website */
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+      }
+     50%{
+    
+        transform: scale(2);
+      }
+     100%{
+    
+        transform: scale(1);
+      }
+    }
+
+    h2 {
+        animation-name: pop;
+        animation-duration: 2.5s;
+        animation-delay:.5s;
+        animation-iteration-count: 1;
+    }
+
+    /* makes phones image transition up */
+
+    @keyframes goUp {
+        0%{
+            transform: translate(0,0);
+          
+        }
+    
+        50% {
+            transform: translate(0,-150px);
+    
+        }
+
+        100% {
+            transform: translate(0,0);
+    
+        }
+    }
+
+    .phones:hover {
+        animation: goUp 2.5s; 
+        animation-iteration-count: 1;
+    }
+
+
+    /* makes the app section images pop out while hovering over theme */
+    .app img:hover {
+        width: 150%;
+        transition: 1s;
+    }
+
+    .app img{
+        transition: 1s;
+        width: 100%;
+    }
+
+    /* makes the product card transition down while hovering over them */
+
+    @keyframes goDown {
+        0%{
+            transform: translate(0,-100px);
+          
+        }
+    
+        100% {
+            transform: translate(0,0);
+    
+        }
+    }
+
+    .fried-chicken {
+        animation: goDown 2s; 
+        animation-iteration-count: 1;
+    }
+
+    .veggie { 
+        animation: goDown 2s; 
+        animation-iteration-count: 1;
+    }
+    .ekpa {
+        animation: goDown 2s; 
+        animation-iteration-count: 1;
+    }
+ 
 
 @media(max-width:610px) {
 
@@ -653,13 +744,16 @@ footer {
         margin: 0 auto;
     }
 
-    .phones img {
-        margin-top: -40%;
+    .phones {
+        margin-top: -5%;
+       
     }
+   
 
     h6 {
         font-size: 40px;
         margin-bottom: -100px;
+        margin-top: 15%;
     }
 
     .app {
@@ -822,9 +916,7 @@ footer {
         margin-top: 10%;
     }
 
-    .products img {
-        height: 302.97px;
-    }
+   
 
     .products h5 {
         font-size: 25px;
