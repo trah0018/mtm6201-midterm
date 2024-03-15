@@ -249,7 +249,7 @@ h6 {
 
 /* adding the create account section for mobile */
 
-/* NOTE TO SELF**** USE THIS METHODE FOR DESKTOP ONLY IF POSSIBLE */
+
 .create-account {
     max-width: 640px;
     margin: 0 auto;
@@ -356,20 +356,76 @@ h6 {
 
  /* product page */
 
- .veggie {
+ .products {
     max-width: 640px;
     margin: 0 auto;
-    background-color: whitesmoke;
  }
 
- .veggie img {
+
+ .products img {
     width: 100%;
  }
 
-.veggie h5 {
+.products h5 {
     font-size: 30px;
     text-align: center;
+    margin-top: 10%;
+  
 }
+
+.products h4 {
+    font-size: 30px;
+    text-align: center;
+    color: var(--color3);
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.products a{
+    background-color: var(--color3);
+    color: inherit;
+    display: block;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.veggie {
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 20%;
+    gap: 20px;
+    background-color: whitesmoke;
+    padding: 10%;
+}
+
+.fried-chicken {
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 20%;
+    gap: 20px;
+    background-color: whitesmoke;
+    padding: 10%;
+}
+
+.ekpa {
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 20%;
+    gap: 20px;
+    background-color: whitesmoke;
+    padding: 10%;
+}
+
+
 
 
 /* contact page  */
@@ -702,6 +758,10 @@ footer {
         max-width: 600px;
         margin: 0 auto;
   }
+
+  /* product page desktop */
+
+
 
   /* adding contact page for desktop */
   .contact{
